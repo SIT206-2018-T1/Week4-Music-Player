@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vzb-pp-Bp6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="TC2-Rw-Ltu">
+            <objects>
+                <viewController id="zPl-0u-lVF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vcd-BP-Wc7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="adele" translatesAutoresizingMaskIntoConstraints="NO" id="Tt5-fP-m0A">
+                                <rect key="frame" x="99" y="20" width="176" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="luis fonsi" translatesAutoresizingMaskIntoConstraints="NO" id="MDe-Qs-jSg">
+                                <rect key="frame" x="99" y="224" width="176" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yanni" translatesAutoresizingMaskIntoConstraints="NO" id="eiu-dY-m44">
+                                <rect key="frame" x="99" y="423" width="176" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="erC-A9-tzY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="ueh-6c-lB9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ADK-Wy-oFv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1325.5999999999999" y="1288.6056971514245"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="Uaf-0l-gy9">
+            <objects>
+                <viewController id="iBe-34-DmX" customClass="ViewController" customModule="week4_prc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pur-s9-duz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="adele" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAc-mr-QTj">
+                                <rect key="frame" x="-1" y="293" width="376" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45459378055435157" green="0.57176754044830258" blue="0.67256314766839376" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2047365948086409" green="0.11970554755818884" blue="0.45051408678756477" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="j60-dR-Nov">
+                                <rect key="frame" x="99" y="377" width="176" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="c3O-G4-PlO">
+                                <rect key="frame" x="92" y="520" width="187" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeVolume:" destination="iBe-34-DmX" eventType="valueChanged" id="Ypc-Tq-Xx5"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ti7-Z6-gZJ">
+                                <rect key="frame" x="19" y="425" width="48" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Previous"/>
+                                <connections>
+                                    <action selector="previous:" destination="iBe-34-DmX" eventType="touchUpInside" id="5Vl-sL-ejU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIo-ze-kfy">
+                                <rect key="frame" x="82" y="423" width="49" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="iBe-34-DmX" eventType="touchUpInside" id="Awe-kl-OYU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k16-Mk-p6H">
+                                <rect key="frame" x="142" y="406" width="95" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Play"/>
+                                <connections>
+                                    <action selector="play:" destination="iBe-34-DmX" eventType="touchUpInside" id="5Ep-cc-gRr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wq-aE-OHX">
+                                <rect key="frame" x="251" y="422" width="51" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Pause"/>
+                                <connections>
+                                    <action selector="pause:" destination="iBe-34-DmX" eventType="touchUpInside" id="Ccb-zU-t6c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sG-nj-Vjm">
+                                <rect key="frame" x="312" y="423" width="48" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Next"/>
+                                <connections>
+                                    <action selector="next:" destination="iBe-34-DmX" eventType="touchUpInside" id="cVw-f3-Mx3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYY-J8-h5O">
+                                <rect key="frame" x="21" y="508" width="55" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Mute"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBT-qu-4Wg">
+                                <rect key="frame" x="271" y="497" width="88" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Sound"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJO-Mi-qz2">
+                                <rect key="frame" x="19" y="368" width="57" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2C-Fh-IQW">
+                                <rect key="frame" x="297" y="367" width="63" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="adele" translatesAutoresizingMaskIntoConstraints="NO" id="gvJ-eX-84y">
+                                <rect key="frame" x="33" y="0.0" width="313" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="LwE-Xi-VoO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="F3U-Zt-c1W"/>
+                    <connections>
+                        <outlet property="elapsedTimeLabel" destination="yJO-Mi-qz2" id="WS1-mD-qzd"/>
+                        <outlet property="nowPlayingLabel" destination="kAc-mr-QTj" id="4ua-LH-0g0"/>
+                        <outlet property="remainingTimeLable" destination="O2C-Fh-IQW" id="xNW-In-WVh"/>
+                        <outlet property="singerImg" destination="gvJ-eX-84y" id="SJ8-uB-lqZ"/>
+                        <outlet property="songProgress" destination="j60-dR-Nov" id="7qr-TG-b3Y"/>
+                        <outlet property="volumeSlider" destination="c3O-G4-PlO" id="FVn-Hf-DCp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTj-6o-lcW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1325.5999999999999" y="623.83808095952031"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ZTU-EN-Bkd">
+            <objects>
+                <tabBarController id="vzb-pp-Bp6" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XT2-h2-GlT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="iBe-34-DmX" kind="relationship" relationship="viewControllers" id="CSf-6b-yKP"/>
+                        <segue destination="zPl-0u-lVF" kind="relationship" relationship="viewControllers" id="n0d-ao-gi4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="awf-Ef-HU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377" y="958"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Mute" width="1600" height="1600"/>
+        <image name="Next" width="512" height="512"/>
+        <image name="Pause" width="225" height="225"/>
+        <image name="Play" width="512" height="512"/>
+        <image name="Previous" width="512" height="512"/>
+        <image name="Sound" width="1292" height="932"/>
+        <image name="Stop" width="512" height="512"/>
+        <image name="adele" width="225" height="225"/>
+        <image name="luis fonsi" width="176" height="286"/>
+        <image name="yanni" width="194" height="260"/>
+    </resources>
+</document>
